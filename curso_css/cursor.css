@@ -1,0 +1,15 @@
+.container {
+    height: 300px;
+    width: 300px;
+    border: 10px solid #777;
+    background-color: lightgreen;
+    /* cursor: pointer; */
+}
+
+/* 
+    https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor
+*/
+
+.container:active {
+    cursor: progress;
+}

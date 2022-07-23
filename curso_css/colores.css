@@ -1,0 +1,25 @@
+/* 
+    Color name
+    Hexagesimal
+    RGB
+    RGBA
+*/
+
+/* 
+    rgb(red, green, blue);
+    rgba(red, green, blue, opacidad)
+
+    Va desde el 1 al 10 y continua a,b,c,d,e,f
+    #111
+    #999
+    #aff
+    #aabbff
+*/
+
+.container {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    border: 10px solid #777;
+    background-color: #ffffff;
+}

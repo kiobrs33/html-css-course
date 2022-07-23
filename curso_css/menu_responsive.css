@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* 
+    <header>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><i class="fas fa-home"></i><a href="#">Inicio</a></li>
+                <li class="nav__li"><i class="fas fa-car"></i><a href="#">Caracteristicas</a></li>
+                <li class="nav__li"><i class="fas fa-user-friends"></i><a href="#">Nosotros</a></li>
+                <li class="nav__li"><i class="fas fa-phone-alt"></i><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+*/
+
+.nav{
+    background-color: slateblue;
+    padding: 10px;
+}
+
+.nav__li{
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.nav__li i {
+    margin-right: 5px;
+}
+
+.nav__li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav__li:hover > a {
+    color: #aaa;
+}
+
+.nav__li:hover {
+    color: #aaa;
+}
+
+@media screen and (max-width: 550px) {
+    .nav{
+        display: none;
+    }
+}

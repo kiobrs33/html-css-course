@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    <div class="container">
+        <div class="item green">Caja flexible</div>
+        <div class="item">Caja flexible</div>
+        <div class="item">Caja flexible</div>
+        <div class="item orange">Caja flexible</div>
+    </div>
+*/
+
+/* 
+    MAIN AXIS => eje X, inicia de IZQUIERDA A DERECHA
+    CROSS AXIS => eje y, inicia de ARRIBA hacia ABAJO
+
+    Con las propiedades de ROW-REVERSE o COLUMN-REVERSE se cambia de posicion el EJE
+    EFECTO ESPEJO
+*/
+
+.container {
+    display: flex;
+    height: 100vh;
+    /* 
+        flex-direction: row;
+        flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    */
+    flex-direction: row;
+
+    /* 
+        Envia los items hacia abajo o hacia arriba, respetando el ancho del item
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+    */
+    flex-wrap: wrap;
+
+    /* 
+        PROPIEDAD PARA MAIN AXIS
+        justify-content: space-between; => Se agrega espacios SOLO ENTRE ITEMS
+        justify-content: space-around; => Los margenes de cada item son iguales
+        justify-content: space-evenly; => Se agrega espacios iguales desde EL PRIMER ITEM hasta EL ULTIMO item
+    */
+    justify-content: space-evenly;
+
+    /* 
+        PROPIEDAD PARA CROSS AXIS
+        Ocupa todo el espacio del CONTENEDOR
+        align-items: flex-start;
+        align-items: center;
+        align-items: flex-end;
+        align-items: baseline;
+        align-items: stretch;
+    */
+    
+    /* 
+        Propiedad BASELINE trabaja muy bien con WRAP-REVERSE
+    */
+
+    /* 
+        PROPIEDAD PARA CROSS AXIS
+        align-content: flex-start;
+        align-content: center;
+        align-content: flex-end;
+        align-content: baseline;
+    */
+    align-content: flex-start;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    background-color: indigo;
+    margin: 5px ; 
+    text-align: center;
+    color: #fff;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}

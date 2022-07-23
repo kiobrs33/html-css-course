@@ -1,0 +1,25 @@
+/* 
+    <form class="contact-form">
+        <input type="text" class="contact-form__input--selected">
+        <input type="text" class="contact-form__input">
+        <input type="password" class="contact-form__input">
+    </form>
+*/
+
+/* 
+    ESTE SE DA CUANDO SE TIENE MAS DE UNA ELEMENTO ANIDADO
+    <div  class="example">
+        <h1 class="example__h1">
+            <p class="example__h1-p">
+            </p>
+        </h1>
+    </div>
+*/
+
+.contact-form__input {
+    color: rgb(7, 7, 237);
+}
+
+.contact-form__input--selected {
+    color: red;
+}

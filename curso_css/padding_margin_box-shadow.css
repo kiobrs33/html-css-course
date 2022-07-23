@@ -1,0 +1,72 @@
+/* 
+    PADDING
+    MARGIN
+    BOX-SIZING
+    BOX-SHADOW(Sombras)
+    TEXT-SHADOW(Sombras de letra)
+    TRANSFORM(rotacion de item)
+*/
+
+/* BOX MODEL */
+/* Jerarquia de estilos */
+
+/* 
+    CONTENT
+    PADDING
+    BORDER
+    MARGIN
+*/
+
+
+.contenedor {
+    /* Padding para todas las posiciones left, right, top and bottom */
+    padding: 20px;
+
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+    /* padding: (top and bottom) (left and right) */
+    padding: 30px 40px;
+
+    /* padding: (top) (right) (bottom) (left) */
+    padding: 10px 20px 15px 35px;
+    width: 400px;
+    height: 400px;
+
+
+    /* CONTENT-BOX: Las propiedades width and height no incluyen el borde, relleno o margen */
+    /* BORDER-BOX: Las propiedad de width y height incluyen el contenido, relleno y borde */
+    box-sizing: border-box;
+}
+
+.contenedor {
+    /* MARGIN tiene las mismas caracteriticas que PADDING */
+    margin: 30px;
+
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-bottom: 40px;
+
+    margin: 20px 40px;
+    margin: 10px 20px 30px 40px;
+
+    /* BOX SHADOW */
+    /* box-shadow: (eje X) (eje Y) (intensidad de la sombra) (borde) (color) */
+    box-shadow: 20px 20px 10px 0 #999;
+
+    /* TEXT SHADOW */
+    /* Para la letra */
+    text-shadow: 5px 5px 10px;
+
+    /* TRANSFORM */
+    transform: rotate(90deg);
+
+    background-color: orange;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    display: inline-block;
+}

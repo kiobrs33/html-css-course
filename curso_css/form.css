@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* 
+    <div class="flex-container">
+        <div class="form-img">
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2013/07/12/13/55/letter-147563_960_720.png" alt="email">
+            </div>
+        </div>
+        <form action="" class="form">
+            <input type="text" class="form__input" placeholder="Name">
+            <input type="text" class="form__input" placeholder="Email">
+            <input type="password" class="form__input" placeholder="Password">
+            <textarea name="text" class="form__input" placeholder="Content"></textarea>
+            <button type="submit" class="form__button">Submit</button>
+        </form>
+    </div>
+*/
+
+.flex-container {
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.form {
+    flex: 1;
+    padding: 30px;
+    min-width: 200px;
+}
+
+.form__input {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 4px solid #999;
+    color: #000;
+    font-size: 15px;
+    padding: 10px 5px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.form__input:focus {
+    outline: none;
+    border-bottom: 4px solid #555;
+}
+
+.form__button {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    transition: .3s;
+}
+
+.form__button:hover {
+    background: linear-gradient(to bottom, #999,#555);
+    color: #fff;
+}
+
+.form textarea {
+    min-height: 150px;
+}
+
+.form-img {
+    flex: 1;
+    min-width: 200px;
+    min-height: 200px;
+    padding:30px;
+    display: flex;
+}
+
+.form-img div {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #fff;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+
+.form-img img {
+    margin: auto;
+    width: 60%;
+}

@@ -1,0 +1,39 @@
+.text {
+    font-size: 25px;
+    display: inline-block;
+}
+
+/* 
+    NO FUNCIONA CON DISPLAY:INLINE
+*/
+.text::first-line {
+    color: #191;
+}
+
+.text::first-letter {
+    font-weight: bold;
+    font-size: 50px;
+    color: red;
+}
+
+.input::placeholder {
+    color: red;
+    font-size: 20px;
+}
+
+.input::selection {
+    color: blue;
+    background-color: yellowgreen;
+}
+
+/* NO FORMAN PARTDE DEL DOM */
+
+b::before {
+    content: 'Todo tendencias';
+    color: red;
+}
+
+b::after {
+    content: 'Ejemplo de texto';
+    color: red;
+}

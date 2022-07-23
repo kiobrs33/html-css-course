@@ -1,0 +1,15 @@
+/* Ocupa todo el ancho del contenedor */
+/* Este puede recibir medidas width and height */
+h2 {
+    display: block;
+}
+
+/* Ocupa espacio de acuerdo al contenido */
+h1 {
+    display: inline;
+}
+
+/* Tienes ambas propiedades */
+h3 {
+    display: inline-block;
+}

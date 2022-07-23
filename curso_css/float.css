@@ -1,0 +1,36 @@
+/* 
+    <div class="container">
+        <img src="https://los40es00.epimg.net/los40/imagenes/2021/02/11/musica/1613061582_121433_1613061669_noticia_normal.jpg" alt="post-malone">
+       
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maiores corporis quibusdam suscipit
+            quasi eligendi, tempore, deleniti consectetur fugit adipisci eveniet a ab sed vero exercitationem fuga
+            ducimus! Aliquam, sunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maiores corporis quibusdam suscipit
+            quasi eligendi, tempore, deleniti consectetur fugit adipisci eveniet a ab sed vero exercitationem fuga
+            ducimus! Aliquam, sunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maiores corporis quibusdam suscipit
+            quasi eligendi, tempore, deleniti consectetur fugit adipisci eveniet a ab sed vero exercitationem fuga
+            ducimus! Aliquam, sunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maiores corporis quibusdam suscipit
+            quasi eligendi, tempore, deleniti consectetur fugit adipisci eveniet a ab sed vero exercitationem fuga
+            ducimus! Aliquam, sunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maiores corporis quibusdam suscipit
+            quasi eligendi, tempore, deleniti consectetur fugit adipisci eveniet a ab sed vero exercitationem fuga
+            ducimus! Aliquam, sunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maiores corporis quibusdam suscipit
+            quasi eligendi, tempore, deleniti consectetur fugit adipisci eveniet a ab sed vero exercitationem fuga
+            ducimus! Aliquam, sunt.
+    </div>
+*/
+
+.container {
+    background-color: #ccc;
+    /* padding: 40px; */
+    width: 50%;
+    margin: auto;
+}
+
+.container img {
+    float: right;
+    width: 200px;
+}

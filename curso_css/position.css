@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+/* 
+    POSITION: RELATIVE => Se conserva el espacio del objeto pero ahora se puede mover en la vista.
+    Toma como referencia el espacio del objeto reservado
+    Top, Bottom, Left, Right
+    Tambien se habilita el EJE Z para suporponer objetos
+    z-index
+*/
+
+
+.caja1{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.caja2{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    z-index: 100;
+}
+.caja3{
+    background-color: lightblue;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* POSITION: ABSOLUTE => No se conserva un espacio para el item*/
+.container {
+    margin: 100px auto;
+    width: 500px;
+    height: 500px;
+    background-color: brown;
+    position: relative;
+}
+
+
+.caja4 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+}
+.caja5 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    right: 0;
+    
+}
+.caja6 {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.caja7 {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.caja8 {
+    width: 100px;
+    height: 100px;
+    background-color: lightslategrey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* 
+    POSITION: FIXED => está posicionado en relación con la ventana gráfica, lo que significa que siempre 
+    permanece en el mismo lugar incluso si se desplaza la página. Las propiedades superior, 
+    derecha, inferior e izquierda se utilizan para colocar el elemento.
+*/
+
+.item{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: limegreen;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* 
+    POSITION: STICKY
+    Un elemento fijo alterna entre relativey fixed, según la posición de desplazamiento. 
+    Se coloca en una posición relativa hasta que se alcanza una posición de desplazamiento 
+    determinada en la ventana gráfica, luego se "pega" en su lugar (como la posición: fija).
+*/
+
+.item2{
+    margin: auto;
+    background-color: limegreen;
+    color: white;
+    position: sticky;
+    top: 0px;
+}
+

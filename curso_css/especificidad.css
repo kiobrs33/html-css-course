@@ -1,0 +1,56 @@
+/* ESPECIFICIDAD SE DA POR JERARQUIA */
+/* 
+    1. !important
+    2. Estilos en linea
+    3. Identificadores - ID
+    =================
+    4. Clases
+    4. Pseudo-clases
+    4. Atributos
+    =================
+    5. Elementos
+    5. Pseudo - Elementos
+*/
+
+/* 
+    El que tiene mas JERARQUIA SEGUN EL ESQUEMA ANTERIOR, el estilo predomina sobre los demás.
+*/
+
+/* 
+    Si los elementos se encuentran en el mismo NIVEL de jerarquia, se aplica el ultimo
+    estilo dado.
+*/
+
+/* IMPORTANT */
+h1 {
+    color: orange !important;
+}
+
+/* ESTILOS EN LINEA se da cuando son colocados en el HTML */
+
+/* IDENTIFICADOR */
+#id_elemento {
+    color: red;
+}
+
+/* CLASES, PSEDUCLASES, ATRIBUTOS */
+.clase_elemento {
+    font-size: 1rem;
+}
+
+.clase_elemento :hover {
+    color: orange;
+}
+
+[atributox="x"] {
+    color: lime;
+}
+
+/* ELEMENTOS, PSEUDO-ELEMENTOS */
+p {
+    border: black;
+}
+
+p::after {
+    color: red;
+}

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    height: 100px;
+    background-color: indigo;
+    margin: 5px ; 
+    text-align: center;
+    color: #fff;
+
+    /* 
+        FLEX
+        flex-row => toma el espacio sobrante y los divide entre el VALOR que le demos
+    */
+    min-width: 150px;
+    /* 
+        flex-grow: 1; => Toma el espacio del CONTENEDOR(Main axis) y los divide en partes iguales PARA LOS ITEMS
+        OJO
+        Esto ocurre por que cada item tiene esta propiedad
+    */
+    /* flex-grow: 1; */
+}
+
+.orange {
+    background-color: orange;
+    /* 
+        flex-grow: 1; => Toma el espacio sobrante del CONTENEDOR(Main axis) y los divide en partes iguales PARA LOS ITEMS
+        OJO 
+        En este caso el item obtiene todo EL ANCHO DEL CONTENEDOR SOBRANTE
+    */
+    flex-grow: 1;
+}
+
+.green {
+    background-color: green;
+    /* 
+        flex-basis: 300px;
+        Tiene mas prioridad que el WIDTH del ITEM
+
+        order: 3;
+        Este es para cambiar el orden de items en el MAIN AXIS o CROSS AXIS DEL CONTENEDOR
+        Depende de GROW o COLUMN
+    */
+    /* 
+        Toma el espacio width del ITEM y le quita para brindar su ancho a los demas
+        flex-shrink: 2;
+    */
+    flex-shrink: 2;
+}

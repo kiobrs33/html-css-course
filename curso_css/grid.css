@@ -1,0 +1,195 @@
+/* 
+    GRIDS
+
+    Grid container
+    Grid Item
+    Grid Cell
+    Grid Tracks (columns and rows)
+    Grid Area (Dos o mas grid cell)
+    Grid Line (Column Line and Row Line)
+
+
+    PROPIEDADES
+
+    #Cantidad DE FILAS Y COLUMNAS
+    grid-template-columns: 150px 150px 1fr;
+    grid-template-rows: 150px 150px 150px;
+
+    #Unidades en las FILAS Y COLUMNAS a definir
+    unidades 1fr or cantidad PX
+
+    #Espacio entre FILAS y COLUMNAS
+    gap: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+
+
+    repeat(cantidad, unidad)
+
+    GRID IMPLICITO E EXPLICITO
+    Explicito => Esto creado por el programador
+    Implicito => Se genera de manera automatica
+
+    #Se brinda el tamaño para las celdas generadas de forma automatica
+    grid-auto-rows: 50px;
+    grid-auto-columns: 200px;
+
+    #Para generar COLUMN O ROW en casa que ya no quepa los items
+    grid-auto-flow: column;
+    grid-auto-flow: row;
+    grid-auto-flow: dense;
+
+*/
+
+* {
+    font-size: 25px;
+    font: bold;
+    font-family: fantasy;
+}
+
+/* 
+    <div class="grid-container">
+        <div class="grid-item orange">Caja 1</div>
+        <div class="grid-item red">Caja 2</div>
+        <div class="grid-item violet">Caja 3</div>
+        <div class="grid-item">Caja 4</div>
+        <div class="grid-item">Caja 5</div>
+        <div class="grid-item">Caja 6</div>
+        <div class="grid-item">Caja 7</div>
+        <div class="grid-item">Caja 8</div>
+        <div class="grid-item">Caja 9</div>
+        <div class="grid-item">Caja 10</div>
+    </div>
+*/
+
+/* GRID DINAMICO */
+/* 
+    minmax(min - max)
+    min-content (El ancho sera el MINIMO DEL CONTENIDO)
+    max-content (El ancho sera el MAXIMO DEL CONTENIDO)
+
+    grid-template-columns: repeat(3,minmax(100px, 250px));
+    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(3, min-content);
+    grid-template-columns: repeat(3,minmax(min-content, max-content));
+    grid-template-columns: repeat(3,minmax(200px, 1fr));
+
+
+    AUTO-FILL => agrega columnas de forma dinamica segun el min-width del item
+    AUTO-FIT => agrega item segun cantidad de items
+    grid-template-columns: repeat( auto-fill ,minmax(200px, 1fr));}
+    grid-template-columns: repeat( auto-fit ,minmax(150px, 1fr));
+
+*/
+
+/* 
+    JUSTIFY => EJE X o MAIN AXIS
+    ALIGN => EJE Y o ACROSS AXIS
+
+    ALINEACION Y CONTROL FILAS  - COLUMNAS
+    Contenido de los HIJOS DEL GRID
+    justify-content: center;
+    align-content: center;
+
+    HIJOS DIRECTOS DEL CONTENEDOR GRID
+    justify-items: center;
+    align-items: center;
+
+    Propiedad para solo un ITEM GRID
+    .grid-item:nth-child(3){
+        justify-self: end;
+        align-self: start;
+    }
+*/
+
+.grid-container {
+    background-color: #999;
+    height: 700px;
+    /* padding: 20px; */
+    margin: 10px;
+    display: grid;
+
+    /* GRID EXPLICITO */
+    /* grid-template-columns: repeat(2, 100px 150px) 1fr; */
+    /* grid-template-rows: repeat(3 ,100px); */
+
+    grid-template-columns: repeat( 3 ,1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    /* ALINEACION Y CONTROL FILAS  - COLUMNAS */
+    /* Contenido de los HIJOS DEL GRID */
+    justify-content: center;
+    align-content: center;
+
+    /* HIJOS DIRECTOS DEL CONTENEDOR GRID */
+    justify-items: center;
+    align-items: center;
+
+    /* gap: 5px; */
+
+    /* IMPLICITO ====================================== */
+    /* grid-auto-rows: 50px; */
+    /* grid-auto-columns: 200px; */
+
+    /* grid-auto-flow: column; */
+    /* grid-auto-flow: row; */
+    /* grid-auto-flow: dense; */
+}
+
+.grid-item {
+    border: 1px solid #333;
+    background: #0082c8;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+/* .grid-item:first-child {
+    justify-self: start;
+    align-self: start ;
+}
+
+.grid-item:nth-child(3){
+    justify-self: end;
+    align-self: start;
+}
+
+.grid-item:nth-child(7){
+    justify-self: start;
+    align-self: end;
+}
+
+.grid-item:last-child {
+    justify-self: end;
+    align-self: end;
+} */
+
+.orange {
+    background: orange;
+    /* 
+        Row Line
+        Column Line
+        Se toma como referencia desde la primera LINEA de Fila o Columna
+        OJO "span te pérmite posicionarte mediante columnas y filas"
+
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 3;   
+    */
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.red {
+    background: rgb(226, 54, 54);
+    grid-column: 3 / 5 ;
+}
+
+.violet {
+    background: blueviolet;
+    grid-column: 2/5;
+    grid-row: 3/4;
+}
+
+
+
+

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    /* BORDER RADIUS */
+    border-radius: 5em;
+
+    /* BORDER */
+    /* border: (tamaño del grosor) (estilo del border) (color del border) */
+    border: 10px solid blue;
+
+    /* Este no ocupa ESPACIO a diferencia del BORDER */
+    outline:10px solid red;
+
+    width: 400px;
+    height: 400px;
+}

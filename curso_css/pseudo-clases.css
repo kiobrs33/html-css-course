@@ -1,0 +1,42 @@
+.caja {
+    height: 400px;
+    width: 400px;
+    background-color: lightseagreen;
+
+    transition: height 1s, width 2s, background-color 3s;
+    transition: all 1s, background-color 2s;
+    transition: 1s;
+}
+
+/* Cuando el cursor pasa sobre el elemento */
+.caja:hover {
+    /* height: 200px;
+    width: 200px; */
+    background-color: maroon;
+}
+
+/* Cuando se queda seleccionado con el click */
+.caja:active {
+    background-color: lightblue;
+}
+
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+    font-size: 30px;
+}
+
+input:focus {
+    background-color: orange;
+    color: red;
+}
+
+/* Pata texto en ingles o español EN , ES */
+.text:lang(es) {
+    background-color: pink;
+    color: red;
+}

@@ -1,0 +1,49 @@
+/* TIPOS DE SELECTORES */
+
+/* Selector UNIVERSAL */
+* {
+    background-color: #999;
+    margin: 0;
+    padding: 0;
+}
+
+/* Selector por TIPO DE ELEMENTO */
+h1 {
+    color: #fff;
+}
+
+p {
+    color: blue;
+}
+
+/* Selector por CLASE */
+.color-verde {
+    color: green;
+}
+
+/* Selector por ID */
+#elemento {
+    color: indigo;
+}
+
+/* Selector por atributo */
+/* Cualquier tipo de atributo se puede CREAR */
+[atributox="x"] {
+    color: lime;
+}
+
+/* Selector por descendiente */
+/* POR etiqueta */
+h3 p {
+    color: maroon;
+}
+
+/* POR clase */
+.titulo-h4 p {
+    color: midnightblue;
+}
+
+/* PSEUDOCLASE */
+h1:hover {
+    color: orange;
+}

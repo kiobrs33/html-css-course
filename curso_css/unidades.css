@@ -1,0 +1,47 @@
+/* UNIDADES DE MEDIDA */
+/* 
+    UNIDADES DE LONGITUD ABSOLUTA
+    Centimetros - cm
+    Milimetros - mm
+    Puntos - pt
+    Pixeles - px
+*/
+
+/* 
+    UNIDADES DE LONGITUD RELATIVAS - RECOMENDADO
+    em: Tamaño de letra del elemento padre, en el caso de propiedades tipográficas como font-size, 
+        y tamaño de la fuente del propio elemento en el caso de otras propiedades, como width.
+    rem: Tamaño de la letra del elemento raíz.
+
+    vw: 1% del ancho de la ventana(pantalla) gráfica.
+    vh: 1% de la altura de la ventana(pantalla) gráfica.
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor {
+    font-size: 20px;
+    background-color: rgb(0, 153, 255);
+    height: 25vh;
+}
+/* 
+    1em: 20 * 1 = 20px
+    2em: 20 * 2 = 40px
+    3em: 20 * 3 = 60px
+
+    LA MISMA LOGICA TIENE rem
+    EM => propiedad del elemento
+    REM => Propiedad del HTML
+    ojo LEER CONCEPTO de em y rem
+*/
+.contenedor h1 {
+    font-size: 2em;
+}
+
+.contenedor-two {
+    background-color: green;
+    height: 25vh;
+}
